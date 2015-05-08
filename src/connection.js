@@ -22,7 +22,7 @@ module.exports = function (classes){
        * calls and responses are done in other places.
        */
       call     : function (method, params, callback){
-        if (!_.isArray(params)) {
+        if (!_.isObject(params)) {
           params = [params];
         }
 
